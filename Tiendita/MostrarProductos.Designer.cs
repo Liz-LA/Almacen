@@ -1,6 +1,6 @@
 ﻿namespace Tiendita
 {
-    partial class Form1
+    partial class MostrarProductos
     {
         /// <summary>
         /// Variable del diseñador necesaria.
@@ -40,7 +40,7 @@
             this.dtgvProductos.AllowUserToAddRows = false;
             this.dtgvProductos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dtgvProductos.Location = new System.Drawing.Point(226, 67);
-            this.dtgvProductos.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dtgvProductos.Margin = new System.Windows.Forms.Padding(4);
             this.dtgvProductos.Name = "dtgvProductos";
             this.dtgvProductos.RowHeadersWidth = 62;
             this.dtgvProductos.RowTemplate.Height = 28;
@@ -60,7 +60,7 @@
             // txtProducto
             // 
             this.txtProducto.Location = new System.Drawing.Point(338, 582);
-            this.txtProducto.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtProducto.Margin = new System.Windows.Forms.Padding(4);
             this.txtProducto.Name = "txtProducto";
             this.txtProducto.Size = new System.Drawing.Size(719, 30);
             this.txtProducto.TabIndex = 2;
@@ -74,8 +74,9 @@
             this.btnAgregar.TabIndex = 3;
             this.btnAgregar.Text = "+";
             this.btnAgregar.UseVisualStyleBackColor = true;
+            this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
             // 
-            // Form1
+            // MostrarProductos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -85,8 +86,8 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dtgvProductos);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.Name = "Form1";
+            this.Margin = new System.Windows.Forms.Padding(4);
+            this.Name = "MostrarProductos";
             this.Text = "Form1";
             ((System.ComponentModel.ISupportInitialize)(this.dtgvProductos)).EndInit();
             this.ResumeLayout(false);
