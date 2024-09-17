@@ -46,6 +46,7 @@
             this.dtgvProductos.RowTemplate.Height = 28;
             this.dtgvProductos.Size = new System.Drawing.Size(967, 449);
             this.dtgvProductos.TabIndex = 0;
+            this.dtgvProductos.CellEnter += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgvProductos_CellEnter);
             // 
             // label1
             // 

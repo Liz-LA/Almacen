@@ -14,15 +14,28 @@ namespace Tiendita
     public partial class FrmDatosProductos : Form
     {
         ManejadorAgregar ma;
+        ManejadorModificar mm;
         public FrmDatosProductos()
         {
             InitializeComponent();
             ma = new ManejadorAgregar();
+            mm = new ManejadorModificar();
+            txtNombre.Text = MostrarProductos.nombre.ToString();
+            txtDescripcion.Text = MostrarProductos.descripcion.ToString();
+            txtPrecio.Text = MostrarProductos.precio.ToString();
+
         }
 
         private void btnAgregar_Click(object sender, EventArgs e)
         {
-            ma.Agregar(txtNombre,txtDescripcion,txtPrecio);
+            if (MostrarProductos.id > 0)
+            {
+                mm.Modificar(txtNombre,txtDescripcion,txtPrecio,MostrarProductos.id);
+            }
+            else
+            {
+                ma.Agregar(txtNombre, txtDescripcion, txtPrecio);
+            }
             Close();
         }
 
