@@ -1,7 +1,6 @@
 D:\Tiendita\Tiendita\obj\Debug\Tiendita.csproj.AssemblyReference.cache
 D:\Tiendita\Tiendita\obj\Debug\Tiendita.csproj.SuggestedBindingRedirects.cache
 D:\Tiendita\Tiendita\obj\Debug\Tiendita.exe.config
-D:\Tiendita\Tiendita\obj\Debug\Tiendita.Form1.resources
 D:\Tiendita\Tiendita\obj\Debug\Tiendita.Properties.Resources.resources
 D:\Tiendita\Tiendita\obj\Debug\Tiendita.csproj.GenerateResource.cache
 D:\Tiendita\Tiendita\obj\Debug\Tiendita.csproj.CoreCompileInputs.cache
@@ -44,3 +43,5 @@ D:\Tiendita\Tiendita\bin\Debug\System.Numerics.Vectors.xml
 D:\Tiendita\Tiendita\obj\Debug\Tiendita.csproj.CopyComplete
 D:\Tiendita\Tiendita\obj\Debug\Tiendita.exe
 D:\Tiendita\Tiendita\obj\Debug\Tiendita.pdb
+D:\Tiendita\Tiendita\obj\Debug\Tiendita.FrmDatosProductos.resources
+D:\Tiendita\Tiendita\obj\Debug\Tiendita.MostrarProductos.resources

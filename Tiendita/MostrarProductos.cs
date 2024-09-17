@@ -11,10 +11,10 @@ using Manejador;
 
 namespace Tiendita
 {
-    public partial class Form1 : Form
+    public partial class MostrarProductos : Form
     {
         ManejadorMostrar mm;
-        public Form1()
+        public MostrarProductos()
         {
             InitializeComponent();
             mm = new ManejadorMostrar();
@@ -22,7 +22,16 @@ namespace Tiendita
 
         private void txtProducto_TextChanged(object sender, EventArgs e)
         {
+            dtgvProductos.Visible = true;
             mm.Mostrar(dtgvProductos,txtProducto.Text);
+        }
+
+        private void btnAgregar_Click(object sender, EventArgs e)
+        {
+            dtgvProductos.Visible = false;
+            FrmDatosProductos dp = new FrmDatosProductos();
+            dp.ShowDialog();
+            txtProducto.Focus();
         }
     }
 }
