@@ -15,6 +15,7 @@ namespace Tiendita
     public partial class MostrarProductos : Form
     {
         ManejadorMostrar mm;
+        ManejadorBorrar mb;
         int fila = 0, columna = 0;
         public static int id = 0, precio = 0;
         public static string nombre = "",descripcion="";
@@ -27,7 +28,9 @@ namespace Tiendita
             {
                 case 4:
                     {
- 
+                        id = int.Parse(dtgvProductos.Rows[fila].Cells[0].Value.ToString());
+                        mb.Borrar(id, dtgvProductos.Rows[fila].Cells[1].Value.ToString());
+                        dtgvProductos.Visible = false;
                     }
                     break;
                 case 5:
@@ -49,6 +52,7 @@ namespace Tiendita
         {
             InitializeComponent();
             mm = new ManejadorMostrar();
+            mb = new ManejadorBorrar();
         }
 
         private void txtProducto_TextChanged(object sender, EventArgs e)
