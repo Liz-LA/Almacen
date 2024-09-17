@@ -44,6 +44,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ManejadorAgregar.cs" />
+    <Compile Include="ManejadorBorrar.cs" />
     <Compile Include="ManejadorModificar.cs" />
     <Compile Include="ManejadorMostrar.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
